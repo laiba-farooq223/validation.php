@@ -1,0 +1,101 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif,sans-serif;
+	margin-top:0 auto;
+    margin-bottom:40px;
+    margin-left: 50px;
+    margin-right:50px;
+	padding: 5rem;
+    background-image:url("bbb.png");
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+    margin-right: 30px;
+}
+nav ul li a{
+    color:blue;
+    text-decoration: none;
+}
+.contsiner{
+	width: 50%;
+	margin: 10px;
+    border:2px  double black;
+    border-width:5px 5px 5px 5px;
+    border-style:solid;
+    border-color:black;
+}
+header{
+    background-image:url("watch.png");
+	color: BLACK;
+	padding: 1rem;
+	text-align: center;
+    border-radius:10px;
+    clip-path:polygon(00,100%0, 100%,0100%);
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+section{
+    flex-basis: 50%;
+	image: 400px;
+}
+.container img:hover{
+    opacity:0.8;
+    background-color: rgb(89, 211, 211);
+    border-radius:50%;
+    width:400px;
+    height:400px;
+}
+form{
+    max-width:500px;
+    margin:20px auto;
+    padding:20px;
+    background-color:#f9f9f9;
+    text-align:center;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-shadow:0 0 10px rgb(0,0, 0, 0.1);
+    display:grid;
+    grid-template:1fr 1fr;
+    gap:10px;
+}
+textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    grid-column:2;
+    width:100%;
+    padding:10px;
+    border:1px solid#ccc;
+}
+button{
+    background-color:#4caf50;
+    color:#fff;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+label{
+    display:block;
+    margin-bottom:10px;
+    grid-column:1;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+@media(max-width:600px);
+.items{
+	flex:1 1 100%;/*on small screen items take full width*/
+}
